@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 Widget buildIntroTexts() => Column(
+  crossAxisAlignment: CrossAxisAlignment.start,
   children: [
     const Text(
       'What is your phone number ?',

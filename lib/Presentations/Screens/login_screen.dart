@@ -4,8 +4,8 @@ import 'package:maps/Presentations/Widgets/build_next_button.dart';
 import 'package:maps/Presentations/Widgets/build_phone_form_field.dart';
 
 class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
-
+   LoginScreen({super.key});
+final GlobalKey<FormState> _phoneFormKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -13,7 +13,7 @@ class LoginScreen extends StatelessWidget {
         backgroundColor: Colors.white,
         body: SingleChildScrollView(
           child: Form(
-            key: UniqueKey(),
+            key: _phoneFormKey,
             child: Container(
               margin: const EdgeInsets.symmetric(horizontal: 32, vertical: 88),
               child: Column(
